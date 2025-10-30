@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<h2>Portal Dashboard</h2>
+<p class="lead">Here’s a quick overview of activity on the Disaster Alleviation Portal.</p>
+
+<div class="row text-center mt-4">
+    <div class="col-md-4">
+        <div class="card border-primary mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Volunteers</h5>
+                <p class="card-text display-6">@ViewBag.VolunteerCount</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card border-success mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Donations</h5>
+                <p class="card-text display-6">@ViewBag.DonationCount</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card border-danger mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Disaster Reports</h5>
+                <p class="card-text display-6">@ViewBag.DisasterCount</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Donation";
+}
+
+<h2>Submit a Donation</h2>
+
+<form method="post" asp-controller="Donation" asp-action="Submit">
+    <div class="mb-3">
+        <label for="donorName" class="form-label">Donor Name</label>
+        <input type="text" class="form-control" name="donorName" required />
+    </div>
+    <div class="mb-3">
+        <label for="resourceType" class="form-label">Resource Type</label>
+        <input type="text" class="form-control" name="resourceType" required />
+    </div>
+    <div class="mb-3">
+        <label for="quantity" class="form-label">Quantity</label>
+        <input type="number" class="form-control" name="quantity" required />
+    </div>
+    <button type="submit" class="btn btn-success">Submit Donation</button>
+</form>
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-success mt-3">@ViewBag.Message</div>
+}

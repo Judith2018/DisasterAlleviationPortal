@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Disaster Report";
+}
+
+<h2>Report a Disaster</h2>
+
+<form method="post" asp-controller="DisasterReport" asp-action="Submit">
+    <div class="mb-3">
+        <label for="location" class="form-label">Location</label>
+        <input type="text" class="form-control" name="location" required />
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea class="form-control" name="description" rows="3" required></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="severityLevel" class="form-label">Severity Level</label>
+        <select class="form-select" name="severityLevel">
+            <option value="Low">Low</option>
+            <option value="Moderate">Moderate</option>
+            <option value="High">High</option>
+            <option value="Critical">Critical</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-danger">Submit Report</button>
+</form>
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-warning mt-3">@ViewBag.Message</div>
+}
