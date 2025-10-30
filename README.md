@@ -48,6 +48,42 @@ Launch the application using Visual Studio (IIS Express or Kestrel).
 Azure DevOps Pipeline
 A CI pipeline is configured using azure-pipelines.yml. It includes build and publish steps. Deployment was attempted using a service connection with Managed Identity, but was blocked due to institutional Microsoft Entra permissions. This issue is documented in the submission.
 
+📸 Screenshots and Evidence Summary
+This section provides visual and functional evidence of the Disaster Alleviation Portal, including user interactions, database integration, and Azure resource setup.
+
+1. Home Page
+Screenshot: Disaster Alleviation Portal landing page Description: Welcoming interface with navigation links to Home, Register, Login, Volunteer, Donation, Disaster Report, and Dashboard. Includes clear calls to action for volunteers, donors, and reporters.
+
+2. Registration Flow
+Screenshot: Registration form and confirmation Description: User enters full name, email, and password. Upon submission, a green confirmation message confirms successful registration.
+
+3. Login Flow
+Screenshot: Login form and welcome message Description: Registered users log in using email and password. A welcome message confirms successful authentication.
+
+4. Volunteer Sign-Up
+Screenshot: Volunteer form and confirmation Description: Users submit their name, contact number, availability, and preferred volunteering date. A confirmation message acknowledges their commitment.
+
+5. Donation Submission
+Screenshot: Donation form and confirmation Description: Users enter donor name, resource type, and quantity. A thank-you message confirms the donation was received.
+
+6. Disaster Report Submission
+Screenshot: Disaster report form Description: Users report incidents by entering location, description, and severity level. This data is stored in the DisasterReports table.
+
+7. Azure SQL Database – DisasterReports Table
+Screenshot: Query results from DisasterReports Description: Shows stored disaster report data including location, description, and severity level. Confirms backend integration.
+
+8. Azure SQL Database – Volunteers Table
+Screenshot: Query results from Volunteers Description: Displays volunteer entries with full name, contact number, availability, and assigned disaster ID.
+
+9. Azure SQL Database – Donations Table
+Screenshot: Query results from Donations Description: Shows donation records including donor name, resource type, and quantity.
+
+10. Azure Resource Overview
+Screenshot: Azure portal resource list Description: Displays active resources including SQL database, App Service, App Service Plan, and Storage Account. Confirms cloud deployment setup.
+
+11. Azure DevOps Pipeline
+Screenshot: Pipeline setup and run status Description: Shows pipeline creation and execution attempt. Although deployment was blocked due to Entra permissions, the CI setup is complete and documented.
+
 Submission Evidence
 GitHub repository with commit history
 
