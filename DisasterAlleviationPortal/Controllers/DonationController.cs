@@ -30,6 +30,7 @@ public class DonationController : Controller
         _context.SaveChanges();
 
         ViewBag.Message = $"Thank you, {donorName}, for donating {quantity} units of {resourceType}.";
+
         return View("Index");
     }
 }
