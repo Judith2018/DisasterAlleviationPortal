@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36212.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisasterAlleviationPortal", "DisasterAlleviationPortal\DisasterAlleviationPortal.csproj", "{3BC4244C-E331-4365-A372-DBE9C2B4CE12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiftOfTheGivers.Tests", "GiftOfTheGivers.Tests\GiftOfTheGivers.Tests.csproj", "{A7CDDF55-6D0B-417F-BA11-2858F343CF1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3BC4244C-E331-4365-A372-DBE9C2B4CE12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BC4244C-E331-4365-A372-DBE9C2B4CE12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BC4244C-E331-4365-A372-DBE9C2B4CE12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7CDDF55-6D0B-417F-BA11-2858F343CF1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7CDDF55-6D0B-417F-BA11-2858F343CF1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7CDDF55-6D0B-417F-BA11-2858F343CF1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7CDDF55-6D0B-417F-BA11-2858F343CF1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
