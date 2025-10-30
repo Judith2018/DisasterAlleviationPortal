@@ -14,7 +14,7 @@ namespace DisasterAlleviationPortal.Pages.User
             _context = context;
         }
 
-        [BindProperty]
+        [BindProperty] 
         public string Username { get; set; }
 
         [BindProperty]
