@@ -17,6 +17,19 @@ public class VolunteerController : Controller
     }
 
     [HttpPost]
+    public IActionResult Create(Volunteer volunteer)
+    {
+        if (ModelState.IsValid)
+        {
+            _context.Volunteers.Add(volunteer);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        return View(volunteer);
+    }
+
+
+    [HttpPost]
     public IActionResult Submit(string fullName, string contactNumber, string availability, DateTime? preferredDate)
     {
         var volunteer = new Volunteer
