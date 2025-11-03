@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisasterAlleviationPortal",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiftOfTheGivers.Tests", "GiftOfTheGivers.Tests\GiftOfTheGivers.Tests.csproj", "{A7CDDF55-6D0B-417F-BA11-2858F343CF1C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisasterPortal", "DisasterPortal\DisasterPortal.csproj", "{1BFE2AAE-7EED-476E-A0C9-943109A15DCC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A7CDDF55-6D0B-417F-BA11-2858F343CF1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7CDDF55-6D0B-417F-BA11-2858F343CF1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7CDDF55-6D0B-417F-BA11-2858F343CF1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BFE2AAE-7EED-476E-A0C9-943109A15DCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BFE2AAE-7EED-476E-A0C9-943109A15DCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BFE2AAE-7EED-476E-A0C9-943109A15DCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BFE2AAE-7EED-476E-A0C9-943109A15DCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

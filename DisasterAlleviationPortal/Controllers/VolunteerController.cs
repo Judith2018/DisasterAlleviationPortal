@@ -19,14 +19,12 @@ public class VolunteerController : Controller
     [HttpPost]
     public IActionResult Create(Volunteer volunteer)
     {
-        if (ModelState.IsValid)
-        {
-            _context.Volunteers.Add(volunteer);
-            _context.SaveChanges();
-            return RedirectToAction("Index");
-        }
-        return View(volunteer);
+        _context.Volunteers.Add(volunteer);
+        _context.SaveChanges(); 
+        return RedirectToAction("Index");
     }
+
+
 
 
     [HttpPost]

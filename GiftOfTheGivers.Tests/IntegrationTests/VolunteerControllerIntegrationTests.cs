@@ -26,22 +26,21 @@ namespace GiftOfTheGivers.Tests.IntegrationTests
         }
 
         [TestMethod]
-        public void SaveVolunteer_IntegrationTest()
+        public void CreateVolunteer_AddsToDatabase()
         {
-            var options = new DbContextOptionsBuilder<AppDbContext>()
-                .UseInMemoryDatabase("TestDb")
-                .Options;
+            var volunteer = new Volunteer
+            {
+                FullName = "Judith",
+                Email = "mulendajudith2018@gmail.com", // Use a dummy email
+                PreferredDate = DateTime.Today
+            };
 
-            using var context = new AppDbContext(options);
-            var controller = new VolunteerController(context);
 
-            var volunteer = new Volunteer { FullName = "Judith",  PreferredDate = DateTime.Today };
-            var result = controller.Create(volunteer) as RedirectToActionResult;
+            var result = _controller.Create(volunteer) as RedirectToActionResult;
 
             Assert.AreEqual("Index", result.ActionName);
-            Assert.AreEqual(1, context.Volunteers.Count());
+            Assert.AreEqual(1, _context.Volunteers.Count());
+            Assert.AreEqual("Judith", _context.Volunteers.First().FullName);
         }
-
-
     }
 }
