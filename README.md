@@ -88,14 +88,27 @@ In this phase, I moved beyond building features and focused on validating them t
 Here’s a breakdown of what I completed:
 
 Unit Testing: I created MSTest and xUnit projects to validate methods like login credential checks and donation input. These tests helped catch logic errors early and confirmed that my business rules were working as expected.
+<img width="1912" height="476" alt="Logic_screenshot" src="https://github.com/user-attachments/assets/df8eb5dc-edbd-4474-9d76-fea39c761773" />
+<img width="1878" height="857" alt="donation_test" src="https://github.com/user-attachments/assets/45547ec0-7dea-4ee0-b882-0544ddd3ffc1" />
+<img width="1918" height="882" alt="loginValidation_test" src="https://github.com/user-attachments/assets/53ccaf94-f8ed-4f0a-8fd4-aac2cd32cd3b" />
+<img width="1831" height="438" alt="loginValidator cs" src="https://github.com/user-attachments/assets/da03552e-3aa1-4900-8ace-04be3ac53426" />
+<img width="1918" height="812" alt="loginValidationTest cs" src="https://github.com/user-attachments/assets/761241af-7619-4313-8d6e-c759c7b2b433" />
+<img width="1916" height="361" alt="DonationService cs" src="https://github.com/user-attachments/assets/103a9ce3-e4ab-4d1e-aaf0-bac7832b1e4b" />
+<img width="1908" height="772" alt="DonationServiceTest cs" src="https://github.com/user-attachments/assets/bf5adf33-9427-4d39-a4fb-7b2f5eb9e8ef" />
 
 Integration Testing: I used EF Core’s InMemoryDatabase to simulate real interactions between controllers and the data layer. This allowed me to test routing, data flow, and controller behavior without relying on a live SQL server.
+<img width="1895" height="863" alt="integration_test_failed" src="https://github.com/user-attachments/assets/0b998e08-8fea-4e58-8fe1-b7a26e8337f5" />
 
 Load and Stress Testing: I used Apache JMeter to simulate multiple users accessing the portal. I recorded metrics like response time, throughput, and error rates to evaluate how the system performs under pressure.
+<img width="1902" height="651" alt="Program_csStructure" src="https://github.com/user-attachments/assets/da01ecf7-3088-4e10-8610-e30d746edda7" />
+<img width="1508" height="855" alt="summaryReport" src="https://github.com/user-attachments/assets/cc8c285f-e108-4529-b8c1-db42689db217" />
 
 Automated UI Testing: I wrote Selenium tests to automate browser interactions such as logging in and submitting forms. These tests ran both locally and in headless mode on Azure build agents, ensuring compatibility with CI pipelines.
+<img width="1918" height="986" alt="login_to_dashboard_test" src="https://github.com/user-attachments/assets/ad693f69-0b94-4ab7-860f-8a7e7d25df24" />
 
 CI/CD Pipeline: I configured an Azure DevOps pipeline that builds, tests, and (where permitted) deploys the application. This setup reflects real-world development practices and ensures that all tests run automatically before deployment.
+<img width="1917" height="1012" alt="Pipeline" src="https://github.com/user-attachments/assets/3b85a018-e8f1-4c32-9fc0-8d6eb099ade8" />
+<img width="1918" height="862" alt="pipeline2" src="https://github.com/user-attachments/assets/1f05dc3d-cc5c-48bb-a976-db20b62e4a0b" />
 
 Final Report: I compiled all testing evidence—including screenshots, code snippets, and performance summaries—into a structured report. I also included usability feedback to demonstrate how real users interact with the portal.
 
