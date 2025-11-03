@@ -81,3 +81,22 @@ Screenshots of pipeline run and service connection attempt
 Manual deployment or explanation of deployment block
 
 Notes Due to institutional restrictions, automatic service connection and deployment via Azure DevOps were not possible. Manual deployment or documentation of the issue is included in the submission. All core features are implemented and tested, and the project demonstrates a complete understanding of ASP.NET MVC, database integration, and CI/CD workflows.
+
+Part 3 Overview – Testing and CI/CD
+In this phase, I moved beyond building features and focused on validating them through structured testing. I implemented unit tests to verify core logic, integration tests to confirm controller-to-database flow, and performance tests to measure how the app handles load. I also automated UI testing using Selenium and configured a CI/CD pipeline in Azure DevOps to simulate professional deployment workflows.
+
+Here’s a breakdown of what I completed:
+
+Unit Testing: I created MSTest and xUnit projects to validate methods like login credential checks and donation input. These tests helped catch logic errors early and confirmed that my business rules were working as expected.
+
+Integration Testing: I used EF Core’s InMemoryDatabase to simulate real interactions between controllers and the data layer. This allowed me to test routing, data flow, and controller behavior without relying on a live SQL server.
+
+Load and Stress Testing: I used Apache JMeter to simulate multiple users accessing the portal. I recorded metrics like response time, throughput, and error rates to evaluate how the system performs under pressure.
+
+Automated UI Testing: I wrote Selenium tests to automate browser interactions such as logging in and submitting forms. These tests ran both locally and in headless mode on Azure build agents, ensuring compatibility with CI pipelines.
+
+CI/CD Pipeline: I configured an Azure DevOps pipeline that builds, tests, and (where permitted) deploys the application. This setup reflects real-world development practices and ensures that all tests run automatically before deployment.
+
+Final Report: I compiled all testing evidence—including screenshots, code snippets, and performance summaries—into a structured report. I also included usability feedback to demonstrate how real users interact with the portal.
+
+This phase demonstrates my ability to test, validate, and deliver software professionally. It shows that I understand not just how to build an application, but how to ensure it’s robust, scalable, and ready for deployment.
